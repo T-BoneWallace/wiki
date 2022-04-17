@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Not Found
+{% endblock %}
+
+{% block body %}
+    <h1>No Entry Found for {{ title }}</h1>
+
+    <p>If you think there should be a page for this, consider creating it!</p>
+
+    <form action="{% url 'edit' %}" method="POST">
+        <input type="hidden" name="title" value="{{ title }}">
+        <input type="submit" value="Create This Page">
+    </form>
+
+
+{% endblock %}

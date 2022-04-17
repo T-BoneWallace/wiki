@@ -1,0 +1,3 @@
+# Django
+
+Django is a web framework written using [Python](/wiki/Python) that allows for the design of web applications that generate [HTML](/wiki/HTML) dynamically. One thing to remember is when using paths with <string:NAME> is that they need to go at the end. If they are in the middle they will break all other paths below them as they use the path name as a string...
